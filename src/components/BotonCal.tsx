@@ -5,15 +5,17 @@ interface BotonCalProps {
   texto: string;
   color?: string;
   ancho?: boolean;
+  accion: (numeroTexto: string) => void;
 }
 
 export const BotonCal = ({
   texto,
   color = '#2d2d2d',
   ancho = false,
+  accion,
 }: BotonCalProps) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=> accion(texto)}>
       <View
         style={[
           styles.boton,
