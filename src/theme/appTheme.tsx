@@ -8,13 +8,13 @@ export const styles = StyleSheet.create({
   calculadoraContainer: {
     flex: 1,
     paddingHorizontal: 20,
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   resultado: {
     color: 'white',
     fontSize: 60,
     textAlign: 'right',
-    marginBottom: 10
+    marginBottom: 10,
   },
   resultadoPeque: {
     color: 'rgba(255,255,255,0.5)',
@@ -25,7 +25,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginBottom: 18,
-    paddingHorizontal: 10
-
-  }
+    paddingHorizontal: 10,
+  },
 });
